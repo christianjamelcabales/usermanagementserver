@@ -1,0 +1,30 @@
+### GET ALL
+GET http://localhost:3000/api/users
+
+### POST
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+        {
+            "firstname": "bb",
+            "lastname": "bb",
+            "email": "bb",
+            "username": "bb",
+            "password": "bb",
+            "filename": "sample.png"
+        }
+
+### GET BY ID
+GET  http://localhost:3000/api/users/656ebfda1df7a0945fba0545
+
+
+### UPDATE
+PATCH  http://localhost:3000/api/users/656ebfda1df7a0945fba0545
+Content-Type: application/json
+
+        {
+            "userName": "unameeee"   
+        }
+
+### DELETE BY ID
+DELETE http://localhost:3000/api/users/65712bfde4d6a4245cd1a308
