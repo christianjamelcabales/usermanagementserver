@@ -5,10 +5,7 @@ const dbUrl = process.env.DB_CONNECTION_STRING; // Replace with your MongoDB con
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(dbUrl, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(dbUrl);
 
     console.log('Connected to the database');
 
