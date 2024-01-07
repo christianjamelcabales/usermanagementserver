@@ -5,7 +5,7 @@ const dbUrl = process.env.DB_CONNECTION_STRING; // Replace with your MongoDB con
 
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb+srv://cjcabales:easybreezy123@cluster0.qzagfaz.mongodb.net/UMS');
+    await mongoose.connect(dbUrl);
 
     console.log('Connected to the database');
 
